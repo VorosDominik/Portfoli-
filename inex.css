@@ -1,0 +1,54 @@
+main{
+    display: grid;
+    
+    grid-template-areas: 
+    "h h h"    
+    "n a a"
+    "f f f";
+}
+/*  minden header */
+header{
+    grid-area: h;
+    text-align: center;
+    background-color: rgb(24, 24, 133);
+    border: solid 2px black;
+}
+/*  dolgok */
+nav{
+    grid-area: n;
+    padding: 5px;
+   
+    
+}
+nav li{
+    margin-top: 25px;
+    list-style: none;
+    font-size: 30px;
+    border: solid 2px black;
+    text-align: center;
+}
+nav ul{
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*  minden ami article */
+article{
+    grid-area: a;
+    padding: 40px;
+    margin: auto;
+    text-align: justify;
+    font-size: large;
+}
+article div{
+    margin: auto;
+    padding: auto;
+}
+#zene{
+    text-align:center ;
+}
+/* footer things */
+footer{
+    grid-area: f;
+    text-align: center;
+}
