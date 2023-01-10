@@ -1,39 +1,38 @@
-html{
-    padding: 0;
-    margin: 0;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+html {
+  padding: 0;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
-  background-image: radial-gradient(blue,black);
+body {
+  margin: auto;
+  padding: auto;
+  background-image: radial-gradient(blue, black);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-main{
-    margin: 100px;
-    margin-left: 250px;
-    margin-right: 250px;
-    background: rgba(5, 2, 10, 0.3);
+main {
+  margin: 10%;
+
+  background: rgba(5, 2, 10, 0.3);
 }
-header{
-    grid-area: h;
+header {
+  grid-area: h;
 }
 
-nav{
-    grid-area: n;
+nav {
+  grid-area: n;
 }
 
-article{
-    grid-area: a;
+article {
+  grid-area: a;
 }
 
-aside{
-    grid-area: as;
+aside {
+  grid-area: as;
 }
 
-footer{
-    grid-area: f;
+footer {
+  grid-area: f;
 }

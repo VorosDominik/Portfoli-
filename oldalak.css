@@ -1,85 +1,99 @@
-main{
-    display: grid;
-    
-    grid-template-areas: 
-    "h h h"    
+main {
+  display: grid;
+  max-width: 1800;
+  grid-template-areas:
+    "h h h"
     "n a as"
     "f f f";
 }
 /*  minden header */
-header{
-    grid-area: h;
-    text-align: center;
-    background-color: rgb(24, 24, 133);
-    border: solid 2px black;
+header {
+  grid-area: h;
+  text-align: center;
+  background-color: rgb(24, 24, 133);
+  border: solid 2px black;
 }
 /*  dolgok */
-nav{
-    grid-area: n;
-    padding: 5px;
-   
-    
+nav {
+  grid-area: n;
+  padding: 5px;
 }
-nav li{
-    margin-top: 25px;
-    list-style: none;
-    font-size: 30px;
-    border: solid 2px black;
-    text-align: center;
+nav li {
+  margin-top: 25px;
+  list-style: none;
+  font-size: 24px;
+  border: solid 2px black;
+  text-align: center;
 }
-nav ul{
-    align-self: center;
-    padding-left: 20px;
-    padding-right: 20px;
+nav ul {
+  align-self: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /*  minden ami article */
-article{
-    grid-area: a;
-    
-    padding: 40px;
-    margin: auto;
-    text-align: justify;
-    font-size: large;
+articel {
+  grid-area: a;
+
+  padding: 8px;
+
+  text-align: justify;
+  font-size: 30px;
 }
-article div{
-    margin: auto;
-    padding: auto;
+
+.kozep {
+  text-align: center;
 }
-.kozep{
-    text-align: center;
-}
-#zene{
-    text-align:center ;
+#zene {
+  text-align: center;
 }
 /* aside things */
-aside{
-    padding-left: 10px;
-
-
-
+aside {
+  
+  padding: 10px;
+  text-align: justify;
 }
 
 /* footer things */
-footer{
-    grid-area: f;
-    text-align: center;
+footer {
+  grid-area: f;
+  text-align: center;
 }
 /* táblázat dolgok */
 table {
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid;
+  color: rgb(0, 0, 0);
+}
+td,
+th {
+  border: 1px solid;
+}
+tr:nth-child(even) {
+  background-color: aqua;
+}
+tr:nth-child(odd) {
+  background-color: rgb(46, 49, 236);
+}
+
+@media screen and (max-width: 600px) {
+  body {
     margin: auto;
-    border-collapse: collapse;
-    border: 1px solid;
-    color: rgb(0, 0, 0);
-}
-td ,th{
-    border: 1px solid;
-    
-}
-tr:nth-child(even){
-    background-color: aqua;
+    padding: auto;
+  }
+  articel {
+    margin: 6px;
+    padding: 6px;
+  }
 
-}
-tr:nth-child(odd){
-    background-color: rgb(46, 49, 236);
-
+  main {
+    grid-template-areas:
+      "h h "
+      "n n"
+      "a a"
+      "as as"
+      "f f";
+    margin: auto;
+    padding: auto;
+  }
 }
